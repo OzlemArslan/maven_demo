@@ -20,7 +20,8 @@ public class NewTest {
 	  
 	  WebElement search_box= driver.findElement(By.name("q"));
 		search_box.sendKeys("Porsche" + Keys.ENTER);
-		Assert.assertTrue(driver.getTitle().contains("Porsche"));
+		Assert.assertTrue(driver.getTitle().contains("Porsche car"));
+		System.out.println("Test");
 	  
   }
   @BeforeTest
